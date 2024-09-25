@@ -1,0 +1,77 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #461583, #2f0d58);
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #28a745; /* Зеленая обводка */
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #28a745; /* Зеленый фон при наведении */
+    color: white;
+}
+
+.contact-btn {
+    border-color: #00ff00;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Лёгкая прозрачность */
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.pay {
+    max-width: 200px;
+}
+
+.footer-link {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

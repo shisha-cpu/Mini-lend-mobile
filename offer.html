@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Оффер </title>
+    <style>
+        /* Основные стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #461583, #2f0d58);
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        h2, h3, h4 {
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul, table {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #28a745;
+        }
+
+        th {
+            background-color: rgba(40, 167, 69, 0.1);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid #28a745;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #28a745;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .pay {
+            max-width: 200px;
+        }
+
+        .footer-link {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo (2).png" alt="Логотип" class="logo">
+       
+        </header>
+
+        <main>
+            <h2>Преимущества:</h2>
+            <ul>
+                <li><strong>Россия и СНГ</strong></li>
+                <li>Без роллингового резерва</li>
+                <li>Нет штрафов за возвраты и другие штрафы</li>
+                <li>Мгновенное снятие баланса без ограничений по суммам</li>
+                <li>Нет сборов за снятие баланса</li>
+            </ul>
+
+            <h3>Тарифы по странам:</h3>
+            <h4>Россия</h4>
+            <table>
+                <tr>
+                    <th>Валюта</th>
+                    <th>MIN PAYIN</th>
+                    <th>MAX PAYIN</th>
+                    <th>PAYIN fee</th>
+                    <th>PAYOUT fee</th>
+                </tr>
+                <tr>
+                    <td>RUB</td>
+                    <td>1000 RUB</td>
+                    <td>200,000 RUB</td>
+                    <td>от 8%</td>
+                    <td>от 3%</td>
+                </tr>
+                <tr>
+                    <td>TRY</td>
+                    <td>200 TRY</td>
+                    <td>75,000 TRY</td>
+                    <td>от 6%</td>
+                    <td>от 2.5%</td>
+                </tr>
+            </table>
+
+            <h4>Узбекистан</h4>
+            <table>
+                <tr>
+                    <th>Валюта</th>
+                    <th>MIN PAYIN</th>
+                    <th>MAX PAYIN</th>
+                    <th>PAYIN fee</th>
+                    <th>PAYOUT fee</th>
+                </tr>
+                <tr>
+                    <td>UZS</td>
+                    <td>75,000 UZS</td>
+                    <td>30,000,000 UZS</td>
+                    <td>от 6%</td>
+                    <td>от 2.5%</td>
+                </tr>
+                <tr>
+                    <td>KGS</td>
+                    <td>500 KGS</td>
+                    <td>200,000 KGS</td>
+                    <td>от 5%</td>
+                    <td>от 2%</td>
+                </tr>
+            </table>
+
+            <h4>Казахстан</h4>
+            <table>
+                <tr>
+                    <th>Валюта</th>
+                    <th>MIN PAYIN</th>
+                    <th>MAX PAYIN</th>
+                    <th>PAYIN fee</th>
+                    <th>PAYOUT fee</th>
+                </tr>
+                <tr>
+                    <td>KZT</td>
+                    <td>2,500 KZT</td>
+                    <td>1,000,000 KZT</td>
+                    <td>от 6%</td>
+                    <td>от 2.5%</td>
+                </tr>
+                <tr>
+                    <td>AZN</td>
+                    <td>15 AZN</td>
+                    <td>4,500 AZN</td>
+                    <td>от 6%</td>
+                    <td>от 2.5%</td>
+                </tr>
+            </table>
+
+            <a href="index.html" class="btn">Вернуться на главную</a>
+        </main>
+    </div>
+
+    <footer> 
+        <img src="img/pay (1).png" alt="Платежные системы" class="pay">
+        <p>&copy; 2024 Ваша компания. Все права защищены.</p>
+        <a href="https://t.me/yourTelegramHandle" class="footer-link">Связаться</a>
+    </footer>
+</body>
+</html>

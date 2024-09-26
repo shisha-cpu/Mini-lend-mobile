@@ -11,12 +11,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
+  
     animation: fadeIn 1.5s ease-out;
 }
 
 header {
-    text-align: center;
+ 
     padding: 20px 0;
 }
 
@@ -37,7 +37,7 @@ h2 {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 600;
-    color: #ffd700;
+    color: #2acd50;
 }
 
 .intro-text {
@@ -55,7 +55,7 @@ h2 {
 
 .highlight {
     font-weight: 700;
-    color: #ffd700;
+    color: #28a745;
 }
 
 ul, ol {

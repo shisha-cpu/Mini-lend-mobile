@@ -73,7 +73,7 @@ h1 {
 
 .faq-answer {
     padding: 15px;
-    display: none;
+    display: block;
     background: rgba(0, 0, 0, 0.5);
 }
 

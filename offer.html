@@ -94,7 +94,7 @@
         }
 
         th {
-            background-color: rgba(255, 153, 0, 0.1);
+            background-color:  rgba(0, 255, 0, 0.241);
         }
 
         .table-container {
@@ -149,29 +149,23 @@
         .footer-link:hover {
             text-decoration: underline;
         }
-
         @media (max-width: 768px) {
-            h1 {
-                font-size: 20px;
-            }
+    .table-container {
+        overflow-x: auto; 
+        display: block;
+        width: 100%;      
 
-            h2, h3, h4 {
-                font-size: 18px;
-            }
+        table-layout: fixed; 
+        width: 100%;         
+        word-wrap: break-word; 
+    }
+    
+    th, td {
+        word-wrap: break-word; 
+        font-size: 12px;       
+    }
+}
 
-            table th, table td {
-                padding: 8px;
-            }
-
-            .logo {
-                max-width: 100px;
-            }
-
-            .btn {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-        }
 
         @media (max-width: 600px) {
             .container {
@@ -262,15 +256,95 @@
                     </tr>
                 </table>
             </div>
-
-            <a href="index.html" class="btn">Вернуться на главную</a>
+            <h4>Казахстан</h4>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Валюта</th>
+                        <th>MIN PAYIN</th>
+                        <th>MAX PAYIN</th>
+                        <th>PAYIN fee</th>
+                        <th>PAYOUT fee</th>
+                    </tr>
+                    <tr>
+                        <td>KZT</td>
+                        <td>2,500 KZT</td>
+                        <td>1,000,000 KZT</td>
+                        <td>от 6%</td>
+                        <td>от 2.5%</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h4>Турция</h4>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Валюта</th>
+                        <th>MIN PAYIN</th>
+                        <th>MAX PAYIN</th>
+                        <th>PAYIN fee</th>
+                        <th>PAYOUT fee</th>
+                    </tr>
+                    <tr>
+                        <td>TRY</td>
+                        <td>200 TRY</td>
+                        <td>75,000 TRY</td>
+                        <td>от 6%</td>
+                        <td>от 2.5%</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h4>Кыргызстан</h4>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Валюта</th>
+                        <th>MIN PAYIN</th>
+                        <th>MAX PAYIN</th>
+                        <th>PAYIN fee</th>
+                        <th>PAYOUT fee</th>
+                    </tr>
+                    <tr>
+                        <td>KGS</td>
+                        <td>500 KGS</td>
+                        <td>200,000 KGS</td>
+                        <td>от 5%</td>
+                        <td>от 2%</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h4>Азербайджан</h4>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Валюта</th>
+                        <th>MIN PAYIN</th>
+                        <th>MAX PAYIN</th>
+                        <th>PAYIN fee</th>
+                        <th>PAYOUT fee</th>
+                    </tr>
+                    <tr>
+                        <td>AZN</td>
+                        <td>15 AZN</td>
+                        <td>4,500 AZN</td>
+                        <td>от 6%</td>
+                        <td>от 2.5%</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <a href="index.html" class="btn glow">Вернуться на главную</a>
+            <a href="https://t.me/yourTelegramHandle" class="btn glow">Связаться</a>
         </main>
     </div>
 
     <footer>
         <img src="img/pay (1).png" alt="Платежные системы" class="pay">
         <p>&copy; 2024 Ваша компания. Все права защищены.</p>
-        <a href="https://t.me/yourTelegramHandle" class="footer-link">Связаться</a>
+   
     </footer>
 </body>
 </html>

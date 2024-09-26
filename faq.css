@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #461583, #2f0d58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    animation: fadeInContainer 1.5s ease-in-out;
+    border: 2px solid #28a745; /* Киберстиль границы */
+    position: relative;
+}
+
+@keyframes fadeInContainer {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Эффект киберсвета */
+}
+
+.faq-item {
+    border: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background: rgba(40, 167, 69, 0.8);
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: rgba(40, 167, 69, 1);
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    margin-top: auto; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    animation: fadeInFooter 1.5s ease-in-out;
+}
+
+@keyframes fadeInFooter {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer p {
+    font-size: 12px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    font-size: 12px;
+    color: #28a745;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%; 
+        padding: 15px; 
+    }
+
+    .logo {
+        width: 80%; 
+        max-width: 250px; 
+    }
+
+    h1 {
+        font-size: 14px; 
+    }
+
+    footer p,
+    .footer-link {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 100%; 
+        max-width: none; 
+    }
+
+    h1 {
+        font-size: 12px; 
+    }
+}.btn {
+    margin-top: 60px;
+    padding: 10px 20px;
+    border: 2px solid #28a745;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.btn:hover {
+    background-color: #28a745;
+    color: white;
+}

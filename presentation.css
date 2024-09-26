@@ -5,6 +5,7 @@ body {
     color: #f4f4f4;
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 90svw;
 }
 
 .container {
@@ -14,7 +15,9 @@ body {
   
     animation: fadeIn 1.5s ease-out;
 }
-
+.main-title{
+    font-size: 20px;
+}
 header {
     display: flex;
     justify-content: center;

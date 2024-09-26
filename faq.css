@@ -77,6 +77,7 @@ h1 {
 .faq-answer {
     text-align: left;
     padding: 15px;
+    padding-left: 30px;
     display: block;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -143,7 +144,8 @@ footer p {
 }.btn {
     margin-left: 10px;
     margin-top: 10px;
-    padding: 10px 20px;
+
+    padding: 15px 25px;
     border: 2px solid #28a745;
     background-color: transparent;
     color: white;
@@ -199,7 +201,7 @@ footer p {
 
     .btn {
         font-size: 12px;
-        padding: 10px 0; 
+        padding: 10px 20px; 
     }
 
     footer p,

@@ -34,6 +34,7 @@ body {
     animation: fadeInContainer 1.5s ease-in-out;
     border: 2px solid #28a745; /* Киберстиль границы */
     position: relative;
+
 }
 
 @keyframes fadeInContainer {
@@ -160,4 +161,11 @@ footer p {
     h1 {
         font-size: 12px; 
     }
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+
 }

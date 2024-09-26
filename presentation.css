@@ -20,10 +20,7 @@ header {
     padding: 20px 0;
 }
 
-.logo {
-    max-width: 150px;
-    animation: float 3s ease-in-out infinite;
-}
+
 
 h1 {
     font-size: 28px;
@@ -96,7 +93,7 @@ footer {
 
 .pay {
     max-width: 200px;
-    animation: spin 6s linear infinite;
+    /* animation: spin 6s linear infinite; */
 }
 
 .footer-link {
@@ -156,4 +153,12 @@ footer {
     100% {
         box-shadow: 0 0 20px rgba(0, 255, 0, 1);
     }
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+
+}.logo {
+    width: 300px;
+    margin-bottom: 20px;
 }

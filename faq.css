@@ -59,7 +59,10 @@ h1 {
     border-radius: 5px;
     overflow: hidden;
 }
-
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
 .faq-question {
     background: rgba(40, 167, 69, 0.8);
     padding: 15px;
@@ -72,6 +75,7 @@ h1 {
 }
 
 .faq-answer {
+    text-align: left;
     padding: 15px;
     display: block;
     background: rgba(0, 0, 0, 0.5);
@@ -152,4 +156,12 @@ footer p {
 .btn:hover {
     background-color: #28a745;
     color: white;
+}
+.buttons{
+    margin-top: 10px;
+    display: flex;
+
+    justify-content: center;
+
+
 }

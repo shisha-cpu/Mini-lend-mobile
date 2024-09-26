@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Оффер </title>
+    <title>Оффер</title>
     <style>
         /* Основные стили */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             background: linear-gradient(135deg, #461583, #2f0d58);
             color: white;
+            line-height: 1.6;
         }
 
         .container {
@@ -29,76 +30,148 @@
             max-width: 150px;
         }
 
-        h1 {
-            font-size: 24px;
+        h1, h2, h3, h4 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #28a745;
         }
 
-        main {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+        h1 {
+            font-size: 28px;
+            letter-spacing: 1px;
         }
 
         h2, h3, h4 {
             border-bottom: 2px solid #28a745;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            padding-bottom: 10px;
         }
 
-        ul, table {
+        /* Визуальное улучшение текста */
+        p, ul, table {
             margin: 20px 0;
             padding: 0 20px;
+            font-size: 18px;
         }
 
         ul {
-            list-style-type: disc;
+            list-style-type: none;
+            padding: 0;
         }
 
+        ul li {
+            margin: 10px 0;
+            padding-left: 35px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '✔';
+            position: absolute;
+            left: 10px;
+            color: #28a745;
+            font-size: 20px;
+        }
+
+        /* Таблицы */
         table {
             width: 100%;
             border-collapse: collapse;
+            overflow-x: auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
 
         th, td {
-            padding: 10px;
-            text-align: left;
+            padding: 12px 15px;
             border: 1px solid #28a745;
+            word-wrap: break-word;
+            font-size: 16px;
         }
 
         th {
             background-color: rgba(40, 167, 69, 0.1);
+            text-transform: uppercase;
+            color: #28a745;
+            font-weight: 700;
         }
 
+        td {
+            color: white;
+        }
+
+        /* Адаптация таблицы для мобильных устройств */
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+            th {
+                display: none;
+            }
+            td {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 5px;
+                border: 1px solid #28a745;
+            }
+            td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: #28a745;
+            }
+        }
+
+        /* Кнопки */
         .btn {
-            padding: 10px 20px;
+            padding: 12px 30px;
             border: 2px solid #28a745;
             background-color: transparent;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            border-radius: 50px;
+            transition: all 0.3s ease;
             display: inline-block;
             margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .btn:hover {
             background-color: #28a745;
             color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Стили для контейнеров */
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        main:hover {
+            background-color: rgba(255, 255, 255, 0.15);
         }
 
         footer {
             text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
+            padding: 30px 0;
+            background-color: rgba(255, 255, 255, 0.05);
         }
 
         .pay {
             max-width: 200px;
+            margin-bottom: 20px;
         }
 
         .footer-link {
             color: #28a745;
             text-decoration: none;
+            font-weight: bold;
         }
 
         .footer-link:hover {
@@ -110,7 +183,6 @@
     <div class="container">
         <header>
             <img src="img/logo (2).png" alt="Логотип" class="logo">
-       
         </header>
 
         <main>
@@ -134,18 +206,18 @@
                     <th>PAYOUT fee</th>
                 </tr>
                 <tr>
-                    <td>RUB</td>
-                    <td>1000 RUB</td>
-                    <td>200,000 RUB</td>
-                    <td>от 8%</td>
-                    <td>от 3%</td>
+                    <td data-label="Валюта">RUB</td>
+                    <td data-label="MIN PAYIN">1000 RUB</td>
+                    <td data-label="MAX PAYIN">200,000 RUB</td>
+                    <td data-label="PAYIN fee">от 8%</td>
+                    <td data-label="PAYOUT fee">от 3%</td>
                 </tr>
                 <tr>
-                    <td>TRY</td>
-                    <td>200 TRY</td>
-                    <td>75,000 TRY</td>
-                    <td>от 6%</td>
-                    <td>от 2.5%</td>
+                    <td data-label="Валюта">TRY</td>
+                    <td data-label="MIN PAYIN">200 TRY</td>
+                    <td data-label="MAX PAYIN">75,000 TRY</td>
+                    <td data-label="PAYIN fee">от 6%</td>
+                    <td data-label="PAYOUT fee">от 2.5%</td>
                 </tr>
             </table>
 
@@ -159,18 +231,18 @@
                     <th>PAYOUT fee</th>
                 </tr>
                 <tr>
-                    <td>UZS</td>
-                    <td>75,000 UZS</td>
-                    <td>30,000,000 UZS</td>
-                    <td>от 6%</td>
-                    <td>от 2.5%</td>
+                    <td data-label="Валюта">UZS</td>
+                    <td data-label="MIN PAYIN">75,000 UZS</td>
+                    <td data-label="MAX PAYIN">30,000,000 UZS</td>
+                    <td data-label="PAYIN fee">от 6%</td>
+                    <td data-label="PAYOUT fee">от 2.5%</td>
                 </tr>
                 <tr>
-                    <td>KGS</td>
-                    <td>500 KGS</td>
-                    <td>200,000 KGS</td>
-                    <td>от 5%</td>
-                    <td>от 2%</td>
+                    <td data-label="Валюта">KGS</td>
+                    <td data-label="MIN PAYIN">500 KGS</td>
+                    <td data-label="MAX PAYIN">200,000 KGS</td>
+                    <td data-label="PAYIN fee">от 5%</td>
+                    <td data-label="PAYOUT fee">от 2%</td>
                 </tr>
             </table>
 
@@ -184,18 +256,18 @@
                     <th>PAYOUT fee</th>
                 </tr>
                 <tr>
-                    <td>KZT</td>
-                    <td>2,500 KZT</td>
-                    <td>1,000,000 KZT</td>
-                    <td>от 6%</td>
-                    <td>от 2.5%</td>
+                    <td data-label="Валюта">KZT</td>
+                    <td data-label="MIN PAYIN">2,500 KZT</td>
+                    <td data-label="MAX PAYIN">1,000,000 KZT</td>
+                    <td data-label="PAYIN fee">от 6%</td>
+                    <td data-label="PAYOUT fee">от 2.5%</td>
                 </tr>
                 <tr>
-                    <td>AZN</td>
-                    <td>15 AZN</td>
-                    <td>4,500 AZN</td>
-                    <td>от 6%</td>
-                    <td>от 2.5%</td>
+                    <td data-label="Валюта">AZN</td>
+                    <td data-label="MIN PAYIN">15 AZN</td>
+                    <td data-label="MAX PAYIN">4,500 AZN</td>
+                    <td data-label="PAYIN fee">от 6%</td>
+                    <td data-label="PAYOUT fee">от 2.5%</td>
                 </tr>
             </table>
 
@@ -203,7 +275,7 @@
         </main>
     </div>
 
-    <footer> 
+    <footer>
         <img src="img/pay (1).png" alt="Платежные системы" class="pay">
         <p>&copy; 2024 Ваша компания. Все права защищены.</p>
         <a href="https://t.me/yourTelegramHandle" class="footer-link">Связаться</a>

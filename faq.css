@@ -64,6 +64,7 @@ h1 {
     margin-bottom: 20px;
 }
 .faq-question {
+    text-align: left !important;
     background: rgba(40, 167, 69, 0.8);
     padding: 15px;
     cursor: pointer;
